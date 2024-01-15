@@ -28,9 +28,9 @@ export default function Home() {
         {/* image */}
         <div className="mx-auto bg-gradient-to-b from stone-700 rounded-full shadow-lg overflow-hidden
           w-24 h-24 md:w-32 md:h-32 lg:w-36 lg:h-36">
-          <Image src={pfp} className="w-14 h-auto ml-5 mt-4
+          <Image src={pfp} alt="Roy Wu pfp" className="w-14 h-auto ml-5 mt-4
                                       md:w-20 md:ml-6
-                                      lg:w-24 lg-ml-8" />
+                                      lg:w-24 lg-ml-8"  />
         </div>
 
         {/* name */}
@@ -120,11 +120,11 @@ export default function Home() {
           </div>
 
           <div className="text-white text-sm md:text-base ml-10 mr-8 md:mr-32">
-            Hi! I'm Roy, a rising software engineer and full-stack developer.
+            Hi! I&apos;m Roy, a rising software engineer and full-stack developer.
             <br /><br />
-            Currently, I'm studying CS and Japanese at the University of Pittsburgh, where I also serve as a student ambassador.
+            Currently, I&apos;m studying CS and Japanese at the University of Pittsburgh, where I also serve as a student ambassador.
             <br /><br />
-            I have a passion for learning new technologies and I'm eager to contribute to dynamic teams.
+            I have a passion for learning new technologies and I&apos;m eager to contribute to dynamic teams.
             Outside of coding, I enjoy MMA, Shogi, and playing with my cat, Shiina.
           </div>
         </div>
@@ -213,7 +213,7 @@ export default function Home() {
                     Players must execute proper EMT protocols to transfer patient care and clear the levels.
                     <br /> <br />
                     <p className="italic">
-                      Med-Day was developed for the Pitt Challenge Healthcare Hackathon and won the 'Supporting Caregivers' Track.
+                      Med-Day was developed for the Pitt Challenge Healthcare Hackathon and won the &apos;Supporting Caregivers&apos; Track.
                     </p>
 
                   </p>
