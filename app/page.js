@@ -2,6 +2,7 @@ import Image from "next/image"
 import pfp from "../public/pfp.png"
 import medkit from "../public/healthkit.png"
 import medday from "../public/med-day.png"
+import pghseal from "../public/pghseal.png"
 
 import IconButton from "../components/IconButton"
 import EmailButton from "../components/EmailButton"
@@ -172,8 +173,6 @@ export default function Home() {
             </div>
 
             {/* Work Box 2 */}
-
-
             <div className="hover:shadow-xl transition-transform transform hover:scale-105 duration-300 bg-zinc-600 shadow-lg flex-1 rounded-md min-h-64 md:min-h-80 lg:min-h-96 mr-76 md:mr-14 lg:mr-0 lg:ml-7">
               <div className="flex flex-row">
                 <div className="flex flex-col">
@@ -222,10 +221,53 @@ export default function Home() {
             </div>
 
             {/* Work Box 3 */}
-            <div className="bg-zinc-600 shadow-lg flex-1 rounded-md
-                              min-h-64 md:min-h-80 lg:min-h-96 mr-76 md:mr-14 lg:mr-0 lg:ml-7">
-              {/* Content for Box 1 */}
+            <div className="hover:shadow-xl transition-transform transform hover:scale-105 duration-300 bg-zinc-600 shadow-lg flex-1 rounded-md min-h-64 md:min-h-80 lg:min-h-96 mr-76 md:mr-14 lg:mr-0 lg:ml-7">
+              <div className="flex flex-row">
+                <div className="flex flex-col">
+                  <div className="flex flex-row items-center">
+                    <div>
+                      <Image src={pghseal} alt="City of Pittsburgh Official Seal" className="w-10 h-auto ml-3 mt-2" />
+                    </div>
+                    <div className="flex-col ml-1 mt-2">
+                      <a href="https://github.com/wujinfen/PGH-Getaway-Crimes" target="_blank" rel="noopener noreferrer">
+                        <div className="text-md md:text-lg flex lex-row  font-semibold">Pittsburgh&apos;s Getaway Crimes
+                          <div className="mt-1">
+                            <a href="https://github.com/wujinfen/PGH-Getaway-Crimes" target="_blank" rel="noopener noreferrer">
+                              <IoMdOpen size="10" />
+                            </a>
+                          </div>
+                        </div>
+                        <div className="text-2xs md:text-sm italic">Community Safety Analytics</div>
+                      </a>
+                    </div>
+
+                  </div>
+
+                  <div>
+                    <Image src={medday} alt="Med-Day Game" className="
+                    rounded-md
+                    w-52 h-52 ml-3 mt-1
+                    md:w-72 md:h-64 
+                    lg:w-72 lg:mt-3
+                    "/>
+                  </div>
+                </div>
+
+                <div className="text-box p-3 mt-10 md:mt-12 lg:mt-14 flex-1">
+                  <p className="text-xs ">
+                    Med-Day is an 8bit style choice-based text game that simulates first-responder emergency medical situations.
+                    <br /> <br />
+                    Players must execute proper EMT protocols to transfer patient care and clear the levels.
+                    <br /> <br />
+                    <p className="italic">
+                      Med-Day was developed for the Pitt Challenge Healthcare Hackathon and won the &apos;Supporting Caregivers&apos; Track.
+                    </p>
+
+                  </p>
+                </div>
+              </div>
             </div>
+
 
 
           </div>
