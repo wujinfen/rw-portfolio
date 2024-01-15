@@ -21,7 +21,7 @@ import { IoMdOpen } from "react-icons/io";
 export default function Home() {
   return (
 
-    <main className="bg-gradient-to-b from-zinc-700 to-neutral-800">
+    <main className="bg-gradient-to-b from-zinc-700 to-neutral-800 overflow-x-hidden">
 
       {/* ME SECTION - SOCIALS - CONTACT */}
       <section className="pt-4 md:pt-8 lg:pt-10">
