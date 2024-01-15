@@ -6,6 +6,7 @@ import medday from "../public/med-day.png"
 import IconButton from "../components/IconButton"
 import EmailButton from "../components/EmailButton"
 
+
 import { FaLinkedin } from "react-icons/fa6";
 import { VscGithub } from "react-icons/vsc";
 import { BsTwitterX } from "react-icons/bs";
@@ -13,6 +14,8 @@ import { FaInstagram } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { MdLocalPhone } from "react-icons/md";
 import { TbCoffee } from "react-icons/tb";
+import { IoMdOpen } from "react-icons/io";
+
 
 
 export default function Home() {
@@ -158,24 +161,35 @@ export default function Home() {
                       <Image src={medkit} alt="Medkit" className="w-10 h-auto ml-3 mt-2" />
                     </div>
                     <div className="flex-col ml-1 mt-2">
-                      <div className="text-sm md:text-base">Med-Day</div>
+                      <div className="text-sm md:text-base flex flex-row">Med-Day
+                        <a href="https://github.com/wujinfen/Med-Day" target="_blank" rel="noopener noreferrer">
+                          <IoMdOpen size="10"/>
+                        </a>
+                      </div>
                       <div className="text-2xs md:text-sm italic">EMT Protocol Simulator</div>
                     </div>
                   </div>
 
                   <div>
                     <Image src={medday} alt="Med-Day Game" className="
-                w-52 h-48 ml-3 mt-1
-                md:w-72 md:h-64 
-                "/>
+                    rounded-md
+                    w-52 h-52 ml-3 mt-1
+                    md:w-72 md:h-64 
+                    lg:w-72 lg:mt-3
+                    "/>
                   </div>
                 </div>
 
-                <div className="text-box p-4 flex-1">
-                  <p className="text-sm">
-                    Pitt Challenge Healthcare Hackathon - Supporting Caregivers Track Winner
-                    <br />
-                    Med-Day is a 8 bit style text-scroller game that simulates first-responder emergency medical situations.
+                <div className="text-box p-3 mt-12 flex-1">
+                  <p className="text-xs text-stone-300">
+                    Med-Day is an 8bit style choice-based text game that simulates first-responder emergency medical situations.
+                    <br /> <br />
+                    Players must execute proper EMT protocols to transfer patient care and clear the levels.
+                    <br /> <br />
+                    <p className="italic">
+                      Med-Day was developed for the Pitt Challenge Healthcare Hackathon and won the 'Supporting Caregivers' Track.
+                    </p>
+
                   </p>
                 </div>
               </div>
