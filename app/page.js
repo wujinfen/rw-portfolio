@@ -153,7 +153,7 @@ export default function Home() {
             {/* Work Box 2 */}
 
 
-            <div className="bg-zinc-600 shadow-lg flex-1 rounded-sm min-h-64 md:min-h-80 lg:min-h-96 mr-76 md:mr-14 lg:mr-0 lg:ml-7">
+            <div className="hover:shadow-xl transition-transform transform hover:scale-105 duration-300 bg-zinc-600 shadow-lg flex-1 rounded-sm min-h-64 md:min-h-80 lg:min-h-96 mr-76 md:mr-14 lg:mr-0 lg:ml-7">
               <div className="flex flex-row">
                 <div className="flex flex-col">
                   <div className="flex flex-row items-center">
@@ -161,13 +161,17 @@ export default function Home() {
                       <Image src={medkit} alt="Medkit" className="w-10 h-auto ml-3 mt-2" />
                     </div>
                     <div className="flex-col ml-1 mt-2">
-                      <div className="text-sm md:text-base flex flex-row">Med-Day
-                        <a href="https://github.com/wujinfen/Med-Day" target="_blank" rel="noopener noreferrer">
-                          <IoMdOpen size="10"/>
-                        </a>
-                      </div>
-                      <div className="text-2xs md:text-sm italic">EMT Protocol Simulator</div>
+                      <a href="https://github.com/wujinfen/Med-Day" target="_blank" rel="noopener noreferrer">
+                        <div className="text-md md:text-lg flex lex-row  font-medium">Med-Day
+
+                          <a href="https://github.com/wujinfen/Med-Day" target="_blank" rel="noopener noreferrer">
+                            <IoMdOpen size="10" />
+                          </a>
+                        </div>
+                        <div className="text-2xs md:text-sm italic">EMT Protocol Simulator</div>
+                      </a>
                     </div>
+
                   </div>
 
                   <div>
@@ -180,8 +184,8 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="text-box p-3 mt-12 flex-1">
-                  <p className="text-xs text-stone-300">
+                <div className="text-box p-3 mt-10 md:mt-12 lg:mt-14 flex-1">
+                  <p className="text-xs ">
                     Med-Day is an 8bit style choice-based text game that simulates first-responder emergency medical situations.
                     <br /> <br />
                     Players must execute proper EMT protocols to transfer patient care and clear the levels.
