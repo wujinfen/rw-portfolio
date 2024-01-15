@@ -124,13 +124,34 @@ export default function Home() {
             <br /><br />
             Currently, I'm studying CS and Japanese at the University of Pittsburgh, where I also serve as a student ambassador.
             <br /><br />
-            I have a passion for learning technologies and I'm eager to contribute to dynamic teams.
+            I have a passion for learning new technologies and I'm eager to contribute to dynamic teams.
             Outside of coding, I enjoy MMA, Shogi, and playing with my cat, Shiina.
           </div>
         </div>
       </section>
 
-      <section className="mx-auto mt-4 md:mt-8 max-w-screen-md">
+      {/* ON REPEAT SECTION */}
+      <section className="mx-auto mt-8 md:mt-8 max-w-screen-md">
+        <div className="flex flex-col md:flex-row gap-1 md:gap-6 lg:gap-8 mx-auto">
+          <div className="text-stone-300 text-sm md:text-base ml-10 md:ml-9">
+            On repeat
+          </div>
+
+          <div className="text-white text-sm md:text-base ml-8 mr-8 md:mr-32 lg:w-full">
+            <iframe
+              style={{ border: '0', allowTransparency: 'true' }}
+              src="https://open.spotify.com/embed/track/5T1tYlzy1CUlbOlYHdlLXM?utm_source=generator&theme=0"
+              width="100%" height="123"
+              frameBorder="0"
+              allowFullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto mt-0 max-w-screen-md">
         <div className="flex flex-col md:flex-row gap-1 md:gap-6 lg:gap-8 mx-auto">
           {/* Work Title */}
           <div className="text-stone-300 text-sm md:text-base ml-10 mb-1 md:ml-9">
@@ -138,9 +159,9 @@ export default function Home() {
           </div>
 
           {/* Work Content */}
-          <div className="flex flex-col gap-4 ml-10 mr-8 md:mr-16 lg:ml-0 lg:mr-32 w-full ">
+          <div className="flex flex-col gap-4 ml-10 mr-8 md:mr-16 lg:ml-5 lg:mr-124 w-full ">
             {/* Work Box 1 */}
-            <div className="bg-zinc-600 shadow-lg flex-1 rounded-sm
+            <div className="bg-zinc-600 shadow-lg flex-1 rounded-md
                               min-h-64 md:min-h-80 lg:min-h-96 mr-76 md:mr-14 lg:mr-0 lg:ml-7">
               {/* Content for Box 1 */}
 
@@ -153,7 +174,7 @@ export default function Home() {
             {/* Work Box 2 */}
 
 
-            <div className="hover:shadow-xl transition-transform transform hover:scale-105 duration-300 bg-zinc-600 shadow-lg flex-1 rounded-sm min-h-64 md:min-h-80 lg:min-h-96 mr-76 md:mr-14 lg:mr-0 lg:ml-7">
+            <div className="hover:shadow-xl transition-transform transform hover:scale-105 duration-300 bg-zinc-600 shadow-lg flex-1 rounded-md min-h-64 md:min-h-80 lg:min-h-96 mr-76 md:mr-14 lg:mr-0 lg:ml-7">
               <div className="flex flex-row">
                 <div className="flex flex-col">
                   <div className="flex flex-row items-center">
@@ -161,12 +182,13 @@ export default function Home() {
                       <Image src={medkit} alt="Medkit" className="w-10 h-auto ml-3 mt-2" />
                     </div>
                     <div className="flex-col ml-1 mt-2">
-                      <a href="https://github.com/wujinfen/Med-Day" target="_blank" rel="noopener noreferrer">
-                        <div className="text-md md:text-lg flex lex-row  font-medium">Med-Day
-
-                          <a href="https://github.com/wujinfen/Med-Day" target="_blank" rel="noopener noreferrer">
-                            <IoMdOpen size="10" />
-                          </a>
+                      <a href="https://devpost.com/software/med-day" target="_blank" rel="noopener noreferrer">
+                        <div className="text-md md:text-lg flex lex-row  font-semibold">Med-Day
+                          <div className="mt-1">
+                            <a href="https://devpost.com/software/med-day" target="_blank" rel="noopener noreferrer">
+                              <IoMdOpen size="10" />
+                            </a>
+                          </div>
                         </div>
                         <div className="text-2xs md:text-sm italic">EMT Protocol Simulator</div>
                       </a>
@@ -200,7 +222,7 @@ export default function Home() {
             </div>
 
             {/* Work Box 3 */}
-            <div className="bg-zinc-600 shadow-lg flex-1 rounded-sm
+            <div className="bg-zinc-600 shadow-lg flex-1 rounded-md
                               min-h-64 md:min-h-80 lg:min-h-96 mr-76 md:mr-14 lg:mr-0 lg:ml-7">
               {/* Content for Box 1 */}
             </div>
@@ -209,6 +231,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
 
       {/*FOOTER*/}
       <section className="flex flex-row mt-4 pb-3 md:mt-8 md:pb-4">
