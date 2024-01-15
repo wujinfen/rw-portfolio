@@ -1,6 +1,7 @@
 import Image from "next/image"
 import pfp from "../public/pfp.png"
 import medkit from "../public/healthkit.png"
+import medday from "../public/med-day.png"
 
 import IconButton from "../components/IconButton"
 import EmailButton from "../components/EmailButton"
@@ -120,7 +121,7 @@ export default function Home() {
             <br /><br />
             Currently, I'm studying CS and Japanese at the University of Pittsburgh, where I also serve as a student ambassador.
             <br /><br />
-            I take pride in learning new technologies and I have fun designing projects.
+            I have a passion for learning technologies and I'm eager to contribute to dynamic teams.
             Outside of coding, I enjoy MMA, Shogi, and playing with my cat, Shiina.
           </div>
         </div>
@@ -136,7 +137,7 @@ export default function Home() {
           {/* Work Content */}
           <div className="flex flex-col gap-4 ml-10 mr-8 md:mr-16 lg:ml-0 lg:mr-32 w-full ">
             {/* Work Box 1 */}
-            <div className="bg-zinc-600 shadow-lg flex-1 
+            <div className="bg-zinc-600 shadow-lg flex-1 rounded-sm
                               min-h-64 md:min-h-80 lg:min-h-96 mr-76 md:mr-14 lg:mr-0 lg:ml-7">
               {/* Content for Box 1 */}
 
@@ -147,17 +148,35 @@ export default function Home() {
             </div>
 
             {/* Work Box 2 */}
-            <div className="bg-zinc-600 shadow-lg flex-1 
-                              min-h-64 md:min-h-80 lg:min-h-96 mr-76 md:mr-14 lg:mr-0 lg:ml-7">
-              {/* Content for Box 1 */}
-              <div flex flex-row>
-                <div>Med-Day: EMT</div>
-                <Image src={medkit} />
+
+
+            <div className="bg-zinc-600 shadow-lg flex-1 rounded-sm min-h-64 md:min-h-80 lg:min-h-96 mr-76 md:mr-14 lg:mr-0 lg:ml-7">
+              <div className="flex flex-row">
+                <div className="flex flex-row items-center">
+                  <div>
+                    <Image src={medkit} alt="Medkit" className="w-10 h-auto ml-3 mt-2" />
+                  </div>
+                  <div className="flex-col ml-1 mt-2">
+                    <div className="text-sm md:text-base">Med-Day</div>
+                    <div className="text-2xs md:text-sm italic">EMT Protocol Simulator</div>
+                  </div>
+                </div>
+
+                <div className="bg-orange-700">
+                  text
+                </div>
+              </div>
+
+              <div>
+                <Image src={medday} alt="Med-Day Game" className="
+                w-52 h-48 ml-3 mt-1
+                md:w-72 md:h-64 
+                "/>
               </div>
             </div>
 
             {/* Work Box 3 */}
-            <div className="bg-zinc-600 shadow-lg flex-1 
+            <div className="bg-zinc-600 shadow-lg flex-1 rounded-sm
                               min-h-64 md:min-h-80 lg:min-h-96 mr-76 md:mr-14 lg:mr-0 lg:ml-7">
               {/* Content for Box 1 */}
             </div>
