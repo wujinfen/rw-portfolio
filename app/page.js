@@ -152,26 +152,32 @@ export default function Home() {
 
             <div className="bg-zinc-600 shadow-lg flex-1 rounded-sm min-h-64 md:min-h-80 lg:min-h-96 mr-76 md:mr-14 lg:mr-0 lg:ml-7">
               <div className="flex flex-row">
-                <div className="flex flex-row items-center">
+                <div className="flex flex-col">
+                  <div className="flex flex-row items-center">
+                    <div>
+                      <Image src={medkit} alt="Medkit" className="w-10 h-auto ml-3 mt-2" />
+                    </div>
+                    <div className="flex-col ml-1 mt-2">
+                      <div className="text-sm md:text-base">Med-Day</div>
+                      <div className="text-2xs md:text-sm italic">EMT Protocol Simulator</div>
+                    </div>
+                  </div>
+
                   <div>
-                    <Image src={medkit} alt="Medkit" className="w-10 h-auto ml-3 mt-2" />
-                  </div>
-                  <div className="flex-col ml-1 mt-2">
-                    <div className="text-sm md:text-base">Med-Day</div>
-                    <div className="text-2xs md:text-sm italic">EMT Protocol Simulator</div>
-                  </div>
-                </div>
-
-                <div className="bg-orange-700">
-                  text
-                </div>
-              </div>
-
-              <div>
-                <Image src={medday} alt="Med-Day Game" className="
+                    <Image src={medday} alt="Med-Day Game" className="
                 w-52 h-48 ml-3 mt-1
                 md:w-72 md:h-64 
                 "/>
+                  </div>
+                </div>
+
+                <div className="text-box p-4 flex-1">
+                  <p className="text-sm">
+                    Pitt Challenge Healthcare Hackathon - Supporting Caregivers Track Winner
+                    <br />
+                    Med-Day is a 8 bit style text-scroller game that simulates first-responder emergency medical situations.
+                  </p>
+                </div>
               </div>
             </div>
 
