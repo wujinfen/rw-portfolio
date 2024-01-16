@@ -3,6 +3,9 @@ import pfp from "../public/pfp.png"
 import medkit from "../public/healthkit.png"
 import medday from "../public/med-day.png"
 import pghseal from "../public/pghseal.png"
+import pghsafety from "../public/safetypchange.png"
+import makerspace from "../public/makerspace_logo.png"
+
 
 import IconButton from "../components/IconButton"
 import EmailButton from "../components/EmailButton"
@@ -161,14 +164,57 @@ export default function Home() {
 
           {/* Work Content */}
           <div className="flex flex-col gap-4 ml-10 mr-8 md:mr-16 lg:ml-5 lg:mr-124 w-full ">
-            {/* Work Box 1 */}
-            <div className="bg-zinc-600 shadow-lg flex-1 rounded-md
-                              min-h-64 md:min-h-80 lg:min-h-96 mr-76 md:mr-14 lg:mr-0 lg:ml-7">
-              {/* Content for Box 1 */}
 
-              {/* Content Layer (Non-blurred) */}
-              <div className="flex mx-auto h-full justify-center items-center text-lBrown font-semibold relative">
-                MUD - Makerspace User Database <br /> In Progress
+
+            {/* Work Box 1 */}
+            <div className="hover:shadow-xl transition-transform transform hover:scale-105 duration-300 bg-zinc-600 shadow-lg flex-1 rounded-md min-h-64 md:min-h-80 lg:min-h-96 mr-76 md:mr-14 lg:mr-0 lg:ml-7">
+              <div className="flex flex-row">
+                <div className="flex flex-col">
+                  <div className="flex flex-row items-center">
+                    <div>
+                      <Image src={makerspace} alt="Pitt Makerspace Logo" className="w-10 h-auto ml-3 mt-2" />
+                    </div>
+                    <div className="flex-col ml-1 mt-2">
+                      <a href="" target="_blank" rel="noopener noreferrer">
+                        <div className="text-xs md:text-lg flex lex-row font-semibold">Makerspace User Database
+                          <div className="mt-1">
+                            <a href="" target="_blank" rel="noopener noreferrer">
+                              <IoMdOpen size="10" />
+                            </a>
+                          </div>
+                        </div>
+                        <div className="text-2xs md:text-sm italic">User Management CRUD App</div>
+                      </a>
+                    </div>
+
+                  </div>
+
+                  <div className="blur-lg">
+                    <Image src={medday} alt="Med-Day Game" className="
+                    rounded-md
+                    w-52 h-52 ml-3 mt-1
+                    md:w-72 md:h-64 
+                    lg:w-72 lg:mt-3
+                    "/>
+                  </div>
+                </div>
+
+                <div className="text-box p-3 mt-10 md:mt-12 lg:mt-14 flex-1">
+                  <p className="text-xs">
+                    COMING SOON
+                    <span className="blur-sm">
+                    <br /> <br />
+                    The Makerspace User Database (MUD) is a user management system created for the mentors and admin of Pitt's makerspace.
+                    <br /> <br />
+                    MUD has migrated the data of 3400+ existing users and it has automated the new user registration process. Every academic semester, MUD is projected to 
+                    handle the registration of 500+ users. MUD also manages the updating of user training information and tracks user infractions. This has
+                    increased safety within the space.
+                    <br /> <br />
+                    Additionally, MUD has facilitated proper data normalization, leading to more accurate
+                    and reliable record keeping.
+                    </span>
+                  </p>
+                </div>
               </div>
             </div>
 
@@ -182,7 +228,7 @@ export default function Home() {
                     </div>
                     <div className="flex-col ml-1 mt-2">
                       <a href="https://devpost.com/software/med-day" target="_blank" rel="noopener noreferrer">
-                        <div className="text-md md:text-lg flex lex-row  font-semibold">Med-Day
+                        <div className="text-md md:text-lg flex lex-row font-semibold">Med-Day
                           <div className="mt-1">
                             <a href="https://devpost.com/software/med-day" target="_blank" rel="noopener noreferrer">
                               <IoMdOpen size="10" />
@@ -212,7 +258,7 @@ export default function Home() {
                     Players must execute proper EMT protocols to transfer patient care and clear the levels.
                     <br /> <br />
                     <p className="italic">
-                      Med-Day was developed for the Pitt Challenge Healthcare Hackathon and won the &apos;Supporting Caregivers&apos; Track.
+                      Pitt Challenge Healthcare Hackathon - &apos;Supporting Caregivers&apos; Track Winner
                     </p>
 
                   </p>
@@ -230,7 +276,7 @@ export default function Home() {
                     </div>
                     <div className="flex-col ml-1 mt-2">
                       <a href="https://github.com/wujinfen/PGH-Getaway-Crimes" target="_blank" rel="noopener noreferrer">
-                        <div className="text-md md:text-lg flex lex-row  font-semibold">Pittsburgh&apos;s Getaway Crimes
+                        <div className="text-xs md:text-lg flex flex-row font-semibold">Pittsburgh Getaway Crimes
                           <div className="mt-1">
                             <a href="https://github.com/wujinfen/PGH-Getaway-Crimes" target="_blank" rel="noopener noreferrer">
                               <IoMdOpen size="10" />
@@ -244,7 +290,7 @@ export default function Home() {
                   </div>
 
                   <div>
-                    <Image src={medday} alt="Med-Day Game" className="
+                    <Image src={pghsafety} alt="PGH Safety Plot" className="
                     rounded-md
                     w-52 h-52 ml-3 mt-1
                     md:w-72 md:h-64 
@@ -254,20 +300,16 @@ export default function Home() {
                 </div>
 
                 <div className="text-box p-3 mt-10 md:mt-12 lg:mt-14 flex-1">
-                  <p className="text-xs ">
-                    Med-Day is an 8bit style choice-based text game that simulates first-responder emergency medical situations.
+                  <p className="text-xs">
+                    My group rated the safety of neighborhoods in the city of Pittsburgh by analyzing getaway crime data.
                     <br /> <br />
-                    Players must execute proper EMT protocols to transfer patient care and clear the levels.
-                    <br /> <br />
-                    <p className="italic">
-                      Med-Day was developed for the Pitt Challenge Healthcare Hackathon and won the &apos;Supporting Caregivers&apos; Track.
-                    </p>
+                    Police arrest data and vehicle speedhump data sourced from the Western Pennsylvania Regional Data Center (WPRDC).
+
 
                   </p>
                 </div>
               </div>
             </div>
-
 
 
           </div>
