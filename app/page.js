@@ -204,7 +204,7 @@ export default function Home() {
                     COMING SOON
                     <span className="blur-sm">
                     <br /> <br />
-                    The Makerspace User Database (MUD) is a user management system created for the mentors and admin of Pitt's makerspace.
+                    The Makerspace User Database (MUD) is a user management system created for the mentors and admin of Pitt&apos;s makerspace.
                     <br /> <br />
                     MUD has migrated the data of 3400+ existing users and it has automated the new user registration process. Every academic semester, MUD is projected to 
                     handle the registration of 500+ users. MUD also manages the updating of user training information and tracks user infractions. This has
