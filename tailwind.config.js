@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       margin: {
         '35.2': '2.2rem',
+        '4.25': '4.25rem',
         '70': '4.375rem',
         '4.5': '4.5rem',
         '76': '4.75rem',
