@@ -64,7 +64,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* personal handles */}
+        {/* SOCIAL MEDIA */}
         <div className="flex justify-center items-center gap-9 mt-4
                         md:gap-12 md:mt-5
                         lg:gap-16 lg:mt-6">
@@ -95,7 +95,7 @@ export default function Home() {
 
         </div>
 
-        {/* email and phone form */}
+        {/* EMAIL AND PHONE FORM */}
         <div className="flex justify-center items-center gap-4 md:gap-8 lg:gap-10">
           <a href="mailto:wuroyy@gmail.com" className="flex justify-center bg-stone-300 rounded-lg shadow-md transition-colors duration-300 hover:bg-zinc-600 hover:text-white 
                   w-32 h-9 mt-4
@@ -118,8 +118,6 @@ export default function Home() {
       </section>
 
       {/* ABOUT SECTION */}
-      {/* ABOUT SECTION NEED TO ADAPT TO SMALL AND MEDIUM SCREENS*/}
-
       <section className="mx-auto mt-4 md:mt-8 max-w-screen-md">
         <div className="flex flex-col md:flex-row gap-1 md:gap-6 lg:gap-8 mx-auto">
           <div className="text-stone-300 text-sm md:text-base ml-10 md:ml-9">
@@ -129,7 +127,7 @@ export default function Home() {
           <div className="text-white text-sm md:text-base ml-10 mr-8 md:mr-32">
             Hi! I&apos;m Roy, a rising software engineer and full-stack developer.
             <br /><br />
-            Currently, I&apos;m studying CS and Japanese at the University of Pittsburgh, where I also serve as a student ambassador.
+            Currently, I&apos;m a studying CS and Japanese at the University of Pittsburgh, where I also serve as a student ambassador.
             <br /><br />
             I have a passion for learning new technologies and I&apos;m eager to contribute to dynamic teams.
             Outside of coding, I enjoy MMA, Shogi, and playing with my cat, Shiina.
@@ -159,12 +157,7 @@ export default function Home() {
       </section>
 
 
-
-
-
-
-
-      <section className="mx-auto mt-0 max-w-screen-md">
+      <section className="mx-auto max-w-screen-md">
         <div className="flex flex-col md:flex-row gap-1 md:gap-6 lg:gap-8 mx-auto">
           {/* Work Title */}
           <div className="text-stone-300 text-sm md:text-base ml-10 mb-1 md:ml-9">
@@ -174,15 +167,15 @@ export default function Home() {
           {/* Work Content */}
           <div className="flex flex-col gap-4 ml-10 mr-8 md:mr-16 lg:ml-5 lg:mr-124 w-full ">
 
-            <section className="hover:shadow-xl transition-transform transform hover:scale-105 duration-300 bg-zinc-600 shadow-lg flex-1 rounded-md min-h-64 md:min-h-80 lg:min-h-96 mr-76 md:mr-14 lg:mr-0 lg:ml-7">
+          <section className="hover:shadow-xl hover:mt-4 hover:mb-4 transition-all transform hover:scale-105 duration-300 shadow-lg rounded-md mr-76 md:mr-14 lg:mr-0 lg:ml-7">
               <MakerspaceCard />
             </section>
 
-            <section className="mt-20 hover:shadow-xl transition-transform transform hover:scale-105 duration-300 bg-zinc-600 shadow-lg flex-1 rounded-md min-h-64 md:min-h-80 lg:min-h-96 mr-76 md:mr-14 lg:mr-0 lg:ml-7">
+            <section className="hover:shadow-xl hover:mt-4 hover:mb-4 transition-all transform hover:scale-105 duration-300 shadow-lg rounded-md mr-76 md:mr-14 lg:mr-0 lg:ml-7">
               <MeddayCard />
             </section>
 
-            <section className="mt-20 hover:shadow-xl transition-transform transform hover:scale-105 duration-300 bg-zinc-600 shadow-lg flex-1 rounded-md min-h-64 md:min-h-80 lg:min-h-96 mr-76 md:mr-14 lg:mr-0 lg:ml-7">
+            <section className="hover:shadow-xl hover:mt-4 hover:mb-4 transition-all transform hover:scale-105 duration-300 shadow-lg rounded-md mr-76 md:mr-14 lg:mr-0 lg:ml-7">
               <GetAwayCard />
             </section>
 
@@ -192,7 +185,6 @@ export default function Home() {
 
 
       {/*FOOTER*/}
-      <div className="mt-64"></div>
       <section className="flex flex-row mt-4 pb-3 md:mt-8 md:pb-4">
         <div className="w-max mx-auto text-stone-300 text-3xs md:text-xs opacity-40 flex">
           made by roy wu with Next.js, React, Tailwind CSS, and lots of coffee <span className="md:ml-1 align-top"><TbCoffee size="21" color="burlywood" /></span>

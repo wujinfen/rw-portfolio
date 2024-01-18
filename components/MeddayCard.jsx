@@ -11,11 +11,7 @@ import Collapse from '@mui/material/Collapse';
 import Avatar from '@mui/material/Avatar';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import { red } from '@mui/material/colors';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import ShareIcon from '@mui/icons-material/Share';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import MoreVertIcon from '@mui/icons-material/MoreVert';
 
 import { FaPython } from "react-icons/fa";
 import { VscGithub } from "react-icons/vsc";
@@ -41,19 +37,22 @@ export default function MedDayCard() {
   };
 
   return (
-    <Card sx={{ bgcolor: '#5d5d68', fontFamily: 'Inter', }}>
+    <Card sx={{ 
+      bgcolor: '#5d5d68', 
+      fontFamily: 'Inter', 
+      }}>
       <CardHeader
         sx={{
-          color: 'white', // This will set the color of the text in the CardHeader
-          fontFamily: 'Inter', // Sets the font family for the entire CardHeader
+          color: 'white', 
+          fontFamily: 'Inter', 
           '.MuiCardHeader-title': {
-            fontSize: '1.15rem', // Adjust the font size as needed
+            fontSize: '1.15rem', 
             fontWeight: 'bold',
           },
           '.MuiCardHeader-subheader': {
             fontStyle: 'italic',
-            fontSize: '0.85rem', // Adjust the font size as needed
-            color: 'white', // Replace with your desired color
+            fontSize: '0.85rem', 
+            color: 'white', 
           },
         }}
 
