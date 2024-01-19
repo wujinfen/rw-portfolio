@@ -5,4 +5,4 @@
 
 This website was made with React, Next.js, Tailwind CSS, MaterialUI, and Framer Motion.
 
-📫 Reach out at **wuroyy@gmail.com**!
+📫 Reach out at **wuroyy@gmail.com**
