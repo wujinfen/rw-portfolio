@@ -38,7 +38,7 @@ export default function MedDayCard() {
 
   return (
     <Card sx={{ 
-      bgcolor: '#5d5d68', 
+      bgcolor: '#282828', 
       fontFamily: 'Inter', 
       }}>
       <CardHeader
@@ -50,9 +50,8 @@ export default function MedDayCard() {
             fontWeight: 'bold',
           },
           '.MuiCardHeader-subheader': {
-            fontStyle: 'italic',
             fontSize: '0.85rem', 
-            color: 'white', 
+            color: '#a7a7a7', 
           },
         }}
 
@@ -65,7 +64,7 @@ export default function MedDayCard() {
         action={
           <IconButton aria-label="Github Med-Day Repository">
             <a href="https://github.com/wujinfen/Med-Day" target="_blank" rel="noopener noreferrer">
-              <VscGithub size="32" color="#BFBFBF" />
+              <VscGithub size="32" color="#a7a7a7" />
             </a>
           </IconButton>
         }
@@ -91,7 +90,7 @@ export default function MedDayCard() {
 
       <CardActions disableSpacing>
         <IconButton aria-label="Made with Python">
-          <FaPython color="" />
+          <FaPython color="#a7a7a7"/>
         </IconButton>
 
         <ExpandMore
@@ -100,7 +99,7 @@ export default function MedDayCard() {
           aria-expanded={expanded}
           aria-label="show more"
         >
-          <ExpandMoreIcon />
+          <ExpandMoreIcon style={{ color: '#a7a7a7' }}/>
         </ExpandMore>
       </CardActions>
 

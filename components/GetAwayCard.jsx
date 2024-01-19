@@ -41,19 +41,19 @@ export default function GetAwayCard() {
     };
 
     return (
-        <Card sx={{ bgcolor: '#5d5d68', fontFamily: 'Inter', }}>
+        <Card sx={{ bgcolor: '#282828', fontFamily: 'Inter', }}>
             <CardHeader
                 sx={{
-                    color: 'white', // This will set the color of the text in the CardHeader
-                    fontFamily: 'Inter', // Sets the font family for the entire CardHeader
+                    color: 'white', 
+                    fontFamily: 'Inter',
                     '.MuiCardHeader-title': {
-                        fontSize: '1.15rem', // Adjust the font size as needed
+                        fontSize: '1.15rem', 
                         fontWeight: 'bold',
                     },
                     '.MuiCardHeader-subheader': {
-                        fontStyle: 'italic',
-                        fontSize: '0.85rem', // Adjust the font size as needed
-                        color: 'white', // Replace with your desired color
+                        
+                        fontSize: '0.85rem',
+                        color: '#a7a7a7', 
                     },
                 }}
 
@@ -66,7 +66,7 @@ export default function GetAwayCard() {
                 action={
                     <IconButton aria-label="Github PGH Getaway Crimes Repository">
                         <a href="https://github.com/wujinfen/PGH-Getaway-Crimes" target="_blank" rel="noopener noreferrer">
-                            <VscGithub size="32" color="#BFBFBF" />
+                            <VscGithub size="32" color="#a7a7a7" />
                         </a>
                     </IconButton>
                 }
@@ -92,19 +92,19 @@ export default function GetAwayCard() {
 
             <CardActions disableSpacing>
                 <IconButton aria-label="Made in Jupyter Notebook">
-                    <SiJupyter />
+                    <SiJupyter color='#a7a7a7'/>
                 </IconButton>
 
                 <IconButton aria-label="Made with Python">
-                    <FaPython />
+                    <FaPython color='#a7a7a7'/>
                 </IconButton>
 
                 <IconButton aria-label="Made with Pandas">
-                    <SiPandas />
+                    <SiPandas color='#a7a7a7'/>
                 </IconButton>
 
                 <IconButton aria-label="Made with Numpy">
-                    <SiNumpy />
+                    <SiNumpy color='#a7a7a7'/>
                 </IconButton>
 
                 <ExpandMore
@@ -113,7 +113,7 @@ export default function GetAwayCard() {
                     aria-expanded={expanded}
                     aria-label="show more"
                 >
-                    <ExpandMoreIcon />
+                    <ExpandMoreIcon style={{ color: '#a7a7a7' }}/>
                 </ExpandMore>
             </CardActions>
 

@@ -47,7 +47,7 @@ export default function MakerspaceCard() {
     };
 
     return (
-        <Card sx={{ bgcolor: '#5d5d68', fontFamily: 'Inter', }}>
+        <Card sx={{ bgcolor: '#282828', fontFamily: 'Inter', }}>
             <CardHeader
                 sx={{
                     color: 'white', 
@@ -57,9 +57,9 @@ export default function MakerspaceCard() {
                         fontWeight: 'bold',
                     },
                     '.MuiCardHeader-subheader': {
-                        fontStyle: 'italic',
                         fontSize: '0.85rem', 
-                        color: 'white', 
+                        fontWeight: 'medium',
+                        color: '#a7a7a7', 
                     },
                 }}
 
@@ -72,7 +72,7 @@ export default function MakerspaceCard() {
                 action={
                     <IconButton aria-label="Github Makerspace User Database Repository">
                         <a href="" target="_blank" rel="noopener noreferrer">
-                            <VscGithub size="32" color="#BFBFBF" />
+                            <VscGithub size="32" color="#a7a7a7" />
                         </a>
                     </IconButton>
                 }
@@ -97,33 +97,34 @@ export default function MakerspaceCard() {
 
             <CardActions disableSpacing>
                 <IconButton aria-label="Made with Next.js">
-                    <SiNextdotjs />
+                    <SiNextdotjs color='#a7a7a7'/>
                 </IconButton>
 
                 <IconButton aria-label="Made with Node.js">
-                    <FaNodeJs />
+                    <FaNodeJs color='#a7a7a7'/>
                 </IconButton>
 
 
                 <IconButton aria-label="Made with React">
-                    <FaReact />
+                    <FaReact color='#a7a7a7'/>
                 </IconButton>
 
                 <IconButton aria-label="Made with Tailwind">
-                    <SiTailwindcss />
+                    <SiTailwindcss color='#a7a7a7'/>
                 </IconButton>
 
                 <IconButton aria-label="Made with MySQL">
-                    <SiMysql />
+                    <SiMysql color='#a7a7a7'/>
                 </IconButton>
 
-                <ExpandMore
+                <ExpandMore 
+                    
                     expand={expanded}
                     onClick={handleExpandClick}
                     aria-expanded={expanded}
                     aria-label="show more"
                 >
-                    <ExpandMoreIcon />
+                    <ExpandMoreIcon style={{ color: '#a7a7a7' }}/>
                 </ExpandMore>
             </CardActions>
 

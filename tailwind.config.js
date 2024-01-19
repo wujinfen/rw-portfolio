@@ -47,6 +47,11 @@ module.exports = {
       colors: {
         'custom-gray': '#3c3c3c',
         'lBrown': '#a1887f',
+        'sGray': '#282828',
+        'tColor': '#a7a7a7',
+        'bf': '#bfbfbf',
+        'zshade': '#323238',
+        'dneutral': '#222222',
       },
       fontSize: {
         'xs': '0.75rem',    // 12px
