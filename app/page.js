@@ -186,7 +186,7 @@ export default function Home() {
       {/*FOOTER*/}
       <section className="flex flex-row mt-8 pb-3 md:mt-8 md:pb-4">
         <div className="w-max mx-auto text-stone-300 text-3xs md:text-xs opacity-40 flex">
-          made by roy wu with Next.js, React, Tailwind CSS, and lots of coffee <span className="md:ml-1 align-top"><TbCoffee size="21" color="burlywood" /></span>
+          made by roy wu with React, Tailwind CSS, Framer Motion, and lots of coffee <span className="md:ml-1 align-top"><TbCoffee size="21" color="burlywood" /></span>
         </div>
       </section>
 
