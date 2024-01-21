@@ -17,7 +17,7 @@ function MeSection({ pfp }) {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.4 }}
+        transition={{ duration: 0.4, delay: 0.15 }}
       >
         {/* Image */}
         <div className="mx-auto bg-gradient-to-b from-zinc-700 to-sGray rounded-full shadow-lg overflow-hidden w-24 h-24 md:w-32 md:h-32 lg:w-36 lg:h-36">
@@ -38,7 +38,7 @@ function MeSection({ pfp }) {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 0.4, delay: 0.15 }}
+        transition={{ duration: 0.4, delay: 0.3 }}
       >
         {/* Title continuation */}
         <div className="flex justify-center items-center gap-2 mt-3 mr-3 md:gap-3 md:mt-4 lg:gap-4 lg:mt-5">
@@ -52,7 +52,7 @@ function MeSection({ pfp }) {
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 0.30 }}
+        transition={{ duration: 1, delay: 0.45 }}
       >
         <div className="flex justify-center items-center gap-9 mt-4
        md:gap-12 md:mt-5

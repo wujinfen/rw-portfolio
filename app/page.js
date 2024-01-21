@@ -35,7 +35,7 @@ export default function Home() {
       <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 1, delay: 0.7 }}
+                transition={{ duration: 1, delay: 0.85 }}
             >
       <section className="mx-auto max-w-screen-md">
         <div className="flex flex-col md:flex-row gap-1 md:gap-6 lg:gap-8 mx-auto">

@@ -8,7 +8,7 @@ function AboutBox() {
             <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 1, delay: 0.7 }}
+                transition={{ duration: 1, delay: 0.85 }}
             >
                 <div className="flex flex-col md:flex-row gap-1 md:gap-6 lg:gap-8 mx-auto">
                     <div className="text-stone-300 font-medium text-sm md:text-base ml-10 md:ml-8">
