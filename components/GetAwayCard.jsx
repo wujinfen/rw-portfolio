@@ -90,7 +90,7 @@ export default function GetAwayCard() {
 
             <CardContent>
                 <Typography variant="body2" color="white">
-                    Getaway crimes is a notebook that determines Pittsburgh's target neighborhoods for getaway crimes by analyzing and visualizing police arrest data and
+                    Getaway crimes is a notebook that determines Pittsburgh&apos;s target neighborhoods for getaway crimes by analyzing and visualizing police arrest data and
                     vehicle speedhump data from the Western Pennsylvania Regional Data Center (WPRDC).
                 </Typography>
             </CardContent>
