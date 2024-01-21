@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from 'framer-motion';
+import { Tooltip } from '@mui/material';
 
 import Image from 'next/image';
 import IconButton from "../components/IconButton";
@@ -82,26 +83,55 @@ function MeSection({ pfp }) {
             </IconButton>
           </a>
         </div>
-      
+
         {/* EMAIL AND PHONE FORM */}
         <div className="flex justify-center items-center gap-4 md:gap-8 lg:gap-10">
-          <a href="mailto:wuroyy@gmail.com" className="flex justify-center bg-stone-300 rounded-lg shadow-md transition-colors duration-300 hover:bg-sGray hover:text-white 
+          <Tooltip title="wuroyy@gmail.com"
+            slotProps={{
+              popper: {
+                modifiers: [
+                  {
+                    name: 'offset',
+                    options: {
+                      offset: [0, -9],
+                    },
+                  },
+                ],
+              },
+            }}
+          >
+            <a href="mailto:wuroyy@gmail.com" className="flex justify-center bg-stone-300 rounded-lg shadow-md transition-colors duration-300 hover:bg-sGray hover:text-white 
                   w-32 h-9 mt-4
                   md:w-44 md:h-12 md:mt-8">
-            <div className="mt-2 text-xs md:ml-2 md:mt-3.5 md:text-sm text-sGray font-semibold transition-colors duration-300 hover:text-white">Contact me</div>
-            <div className="mt-1 ml-2 md:ml-4 md:mt-2.5">
-              <HiOutlineMail size="28" color="#3C3c3c" />
-            </div>
-          </a>
+              <div className="mt-2 text-xs md:ml-2 md:mt-3.5 md:text-sm text-sGray font-semibold transition-colors duration-300 hover:text-white">Contact me</div>
+              <div className="mt-1 ml-2 md:ml-4 md:mt-2.5">
+                <HiOutlineMail size="28" color="#3C3c3c" />
+              </div>
+            </a>
+          </Tooltip>
 
           <div className="text-stone-300 font-medium text-sm mt-4 md:text-md md:mt-7">or</div>
-
+          <Tooltip title="+1 (484) 280-4791"
+            slotProps={{
+              popper: {
+                modifiers: [
+                  {
+                    name: 'offset',
+                    options: {
+                      offset: [0, -9],
+                    },
+                  },
+                ],
+              },
+            }}
+          >
           <a href={`tel:${+14842804791}`} className="flex justify-center bg-sGray rounded-lg shadow-md transition-colors duration-300 hover:bg-stone-300 hover:text-white
                   w-32 h-9 mt-4
                   md:w-44 md:h-12 md:mt-8">
             <div className="mt-2 text-xs md:ml-2 md:mt-3.5 md:text-sm text-stone-300 font-semibold transition-colors duration-300 hover:text-custom-gray">Reach out</div>
             <div className="mt-1 ml-2 md:ml-4 md:mt-2.5"><MdLocalPhone size="28" color="#bfbfbf" /></div>
           </a>
+          </Tooltip>
         </div>
       </motion.div>
 

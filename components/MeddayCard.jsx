@@ -2,6 +2,8 @@
 
 import * as React from 'react';
 import { styled } from '@mui/material/styles';
+import { Tooltip } from '@mui/material';
+
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
@@ -37,21 +39,21 @@ export default function MedDayCard() {
   };
 
   return (
-    <Card sx={{ 
-      bgcolor: '#282828', 
-      fontFamily: 'Inter', 
-      }}>
+    <Card sx={{
+      bgcolor: '#282828',
+      fontFamily: 'Inter',
+    }}>
       <CardHeader
         sx={{
-          color: 'white', 
-          fontFamily: 'Inter', 
+          color: 'white',
+          fontFamily: 'Inter',
           '.MuiCardHeader-title': {
-            fontSize: '1.15rem', 
+            fontSize: '1.15rem',
             fontWeight: 'bold',
           },
           '.MuiCardHeader-subheader': {
-            fontSize: '0.85rem', 
-            color: '#a7a7a7', 
+            fontSize: '0.85rem',
+            color: '#a7a7a7',
           },
         }}
 
@@ -62,11 +64,13 @@ export default function MedDayCard() {
         }
 
         action={
-          <IconButton aria-label="Github Med-Day Repository">
-            <a href="https://github.com/wujinfen/Med-Day" target="_blank" rel="noopener noreferrer">
-              <VscGithub size="32" color="#a7a7a7" />
-            </a>
-          </IconButton>
+          <Tooltip title="Open in GitHub">
+            <IconButton aria-label="Github Med-Day Repository">
+              <a href="https://github.com/wujinfen/Med-Day" target="_blank" rel="noopener noreferrer">
+                <VscGithub size="32" color="#a7a7a7" />
+              </a>
+            </IconButton>
+          </Tooltip>
         }
 
         title="Med-Day"
@@ -89,9 +93,12 @@ export default function MedDayCard() {
       </CardContent>
 
       <CardActions disableSpacing>
-        <IconButton aria-label="Made with Python">
-          <FaPython color="#a7a7a7"/>
-        </IconButton>
+        <Tooltip title="Coded with Python and PyGame">
+          <IconButton aria-label="Made with Python">
+            <FaPython color="#a7a7a7" />
+          </IconButton>
+        </Tooltip>
+
 
         <ExpandMore
           expand={expanded}
@@ -99,8 +106,11 @@ export default function MedDayCard() {
           aria-expanded={expanded}
           aria-label="show more"
         >
-          <ExpandMoreIcon style={{ color: '#a7a7a7' }}/>
+          <Tooltip title="Read more" placement="left">
+            <ExpandMoreIcon style={{ color: '#a7a7a7' }} />
+          </Tooltip>
         </ExpandMore>
+
       </CardActions>
 
       <Collapse in={expanded} timeout="auto" unmountOnExit>
@@ -114,7 +124,7 @@ export default function MedDayCard() {
             practice protocols to avoid errors in the field. To clear the levels, players must execute proper protocol to successfully transfer patient care.
             <br /> <br />
             Med-Day was created with Python and the PyGame library. The EMT protocols were extracted from the PA Basic Life Support Protocols handbook. Our group storyboarded the cardiac arrest
-            emergency scenario based off these protocols. 
+            emergency scenario based off these protocols.
             <br /> <br />
             Development Process: <br />First, we developed the menus and GUI. Then, we utilized an associative array data structure to store and link dialogue options.
             These served as game-states that would trigger upon button clicks and update the GUI accordingly. Finally, we added music, sound effects, and pixel art.

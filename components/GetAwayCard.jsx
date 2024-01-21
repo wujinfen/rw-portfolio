@@ -2,6 +2,9 @@
 
 import * as React from 'react';
 import { styled } from '@mui/material/styles';
+import { Tooltip } from '@mui/material';
+
+
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
 import CardMedia from '@mui/material/CardMedia';
@@ -44,16 +47,16 @@ export default function GetAwayCard() {
         <Card sx={{ bgcolor: '#282828', fontFamily: 'Inter', }}>
             <CardHeader
                 sx={{
-                    color: 'white', 
+                    color: 'white',
                     fontFamily: 'Inter',
                     '.MuiCardHeader-title': {
-                        fontSize: '1.15rem', 
+                        fontSize: '1.15rem',
                         fontWeight: 'bold',
                     },
                     '.MuiCardHeader-subheader': {
-                        
+
                         fontSize: '0.85rem',
-                        color: '#a7a7a7', 
+                        color: '#a7a7a7',
                     },
                 }}
 
@@ -64,11 +67,14 @@ export default function GetAwayCard() {
                 }
 
                 action={
-                    <IconButton aria-label="Github PGH Getaway Crimes Repository">
-                        <a href="https://github.com/wujinfen/PGH-Getaway-Crimes" target="_blank" rel="noopener noreferrer">
-                            <VscGithub size="32" color="#a7a7a7" />
-                        </a>
-                    </IconButton>
+                    <Tooltip title="Open in GitHub">
+
+                        <IconButton aria-label="Github PGH Getaway Crimes Repository">
+                            <a href="https://github.com/wujinfen/PGH-Getaway-Crimes" target="_blank" rel="noopener noreferrer">
+                                <VscGithub size="32" color="#a7a7a7" />
+                            </a>
+                        </IconButton>
+                    </Tooltip>
                 }
 
                 title="Pittsburgh Getaway Crimes"
@@ -91,21 +97,29 @@ export default function GetAwayCard() {
             </CardContent>
 
             <CardActions disableSpacing>
-                <IconButton aria-label="Made in Jupyter Notebook">
-                    <SiJupyter color='#a7a7a7'/>
-                </IconButton>
+                <Tooltip title="Made in Jupyter Notebook">
+                    <IconButton aria-label="Made in Jupyter Notebook">
+                        <SiJupyter color='#a7a7a7' />
+                    </IconButton>
+                </Tooltip>
 
-                <IconButton aria-label="Made with Python">
-                    <FaPython color='#a7a7a7'/>
-                </IconButton>
+                <Tooltip title="Coded with Python">
+                    <IconButton aria-label="Made with Python">
+                        <FaPython color='#a7a7a7' />
+                    </IconButton>
+                </Tooltip>
 
-                <IconButton aria-label="Made with Pandas">
-                    <SiPandas color='#a7a7a7'/>
-                </IconButton>
+                <Tooltip title="Data analysis with Pandas">
+                    <IconButton aria-label="Made with Pandas">
+                        <SiPandas color='#a7a7a7' />
+                    </IconButton>
+                </Tooltip>
 
-                <IconButton aria-label="Made with Numpy">
-                    <SiNumpy color='#a7a7a7'/>
-                </IconButton>
+                <Tooltip title="Arrays with NumPy">
+                    <IconButton aria-label="Made with NumPy">
+                        <SiNumpy color='#a7a7a7' />
+                    </IconButton>
+                </Tooltip>
 
                 <ExpandMore
                     expand={expanded}
@@ -113,7 +127,9 @@ export default function GetAwayCard() {
                     aria-expanded={expanded}
                     aria-label="show more"
                 >
-                    <ExpandMoreIcon style={{ color: '#a7a7a7' }}/>
+                    <Tooltip title="Read more" placement="left">
+                        <ExpandMoreIcon style={{ color: '#a7a7a7' }} />
+                    </Tooltip>
                 </ExpandMore>
             </CardActions>
 
