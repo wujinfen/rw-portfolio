@@ -74,7 +74,7 @@ export default function MedDayCard() {
         }
 
         title="Med-Day"
-        subheader="EMT Protocol Simulator"
+        subheader={<>EMT Protocol Simulator <br /> Pitt Challenge Healthcare Hackathon Winner</>}
       />
 
       <CardMedia
@@ -87,8 +87,6 @@ export default function MedDayCard() {
       <CardContent>
         <Typography variant="body2" color="white">
           Med-Day is an 8bit style choice-based text game that simulates first-responder emergency medical situations.
-          <br /> <br />
-          Pitt Challenge Healthcare Hackathon - &apos;Supporting Caregivers&apos; Track Winner
         </Typography>
       </CardContent>
 
@@ -115,20 +113,62 @@ export default function MedDayCard() {
 
       <Collapse in={expanded} timeout="auto" unmountOnExit>
         <CardContent>
+          <div style={{ display: 'flex'}}>
+            <Typography variant="body2" color="gray" style={{ width: '110px' }}>Client</Typography>
+            <Typography variant="body2" color="White">
+              <span>
+                <a href="https://pittchallenge.com/" target="_blank" rel="noopener noreferrer">
+                  University of Pittsburgh School of Pharmacy - Pitt Challenge Healthcare Hackathon
+                </a>
+              </span>
+            </Typography>
+          </div>
 
-          <Typography variant="body2" color="white">
-            EMTs provide immediate response to medical emergencies. However, many
-            EMTs fail to execute medical protocols. A survey revealed that 20% of EMTs have
-            admitted to making treatment errors in the past year. Online resources for EMT protocol practice are
-            scarce and uneffective. To address these issues, our team developed a game to help EMTs
-            practice protocols to avoid errors in the field. To clear the levels, players must execute proper protocol to successfully transfer patient care.
-            <br /> <br />
+       
+          <div style={{ display: 'flex'}}>
+            <Typography variant="body2" color="gray" style={{ width: '80px' }}>Timeline</Typography>
+            <Typography variant="body2" color="White">
+              September 2023
+            </Typography>
+          </div>
+
+          <div style={{ display: 'flex'}}>
+            <Typography variant="body2" color="gray" style={{ width: '80px' }}>Role</Typography>
+            <Typography variant="body2" color="White">
+              GUI Developer & Backend Integration
+            </Typography>
+          </div>
+          <div style={{ display: 'flex'}}>
+            <Typography variant="body2" color="gray" style={{ width: '80px' }}>Awards</Typography>
+            <Typography variant="body2" color="White">
+              Supporting Caregivers Track Winner
+            </Typography>
+          </div>
+
+          <br />
+
+          <div>
+            <Typography variant="body2" color="gray">Outcome</Typography>
+            <Typography variant="body2" color="White">
+              EMTs provide immediate response to medical emergencies. However, many
+              fail to execute medical protocols. A survey revealed that 20% of EMTs have
+              admitted to making treatment errors in the past year. Online resources for EMT protocol practice are
+              scarce and uneffective. To address these issues, our team developed a game to help EMTs
+              practice protocols to avoid errors in the field. To clear the levels, players must perform proper protocol to successfully transfer patient care.
+            </Typography>
+          </div>
+
+          <br />
+
+          <div>
+            <Typography variant="body2" color="gray">Development</Typography>
+            <Typography variant="body2" color="White">
             Med-Day was created with Python and the PyGame library. The EMT protocols were extracted from the PA Basic Life Support Protocols handbook. Our group storyboarded the cardiac arrest
             emergency scenario based off these protocols.
-            <br /> <br />
-            Development Process: <br />First, we developed the menus and GUI. Then, we utilized an associative array data structure to store and link dialogue options.
+            First, we developed the menus and GUI. Then, we utilized an associative array data structure to store and link dialogue options.
             These served as game-states that would trigger upon button clicks and update the GUI accordingly. Finally, we added music, sound effects, and pixel art.
-          </Typography>
+            </Typography>
+          </div>
         </CardContent>
       </Collapse>
     </Card>
