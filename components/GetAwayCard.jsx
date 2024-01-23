@@ -54,7 +54,6 @@ export default function GetAwayCard() {
                         fontWeight: 'bold',
                     },
                     '.MuiCardHeader-subheader': {
-
                         fontSize: '0.85rem',
                         color: '#a7a7a7',
                     },
