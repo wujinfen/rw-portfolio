@@ -43,13 +43,13 @@ export default function Home() {
           </div>
 
           {/* Work Content */}
-          <div className="flex flex-col gap-4 ml-10 mr-8 md:mr-16 lg:ml-4 lg:mr-124 w-full ">
+          <div className="flex flex-col gap-4 ml-10 mr-8 md:mr-16 lg:ml-0 lg:mr-124 w-full ">
 
-            <section className="hover:shadow-xl hover:mt-4 hover:mb-4 transition-all transform hover:scale-105 duration-300 rounded-md mr-76 md:mr-14 lg:mr-0 lg:ml-7">
+            <section className="hover:shadow-xl hover:mt-4 hover:mb-4 transition-all transform hover:scale-105 duration-300 rounded-md mr-76 md:mr-14 lg:mr-0 lg:ml-5">
               <MeddayCard />
             </section>
 
-            <section className="hover:shadow-xl hover:mt-4 hover:mb-4 transition-all transform hover:scale-105 duration-300 rounded-md mr-76 md:mr-14 lg:mr-0 lg:ml-7">
+            <section className="hover:shadow-xl hover:mt-4 hover:mb-4 transition-all transform hover:scale-105 duration-300 rounded-md mr-76 md:mr-14 lg:mr-0 lg:ml-5">
               <GetAwayCard />
             </section>
 
