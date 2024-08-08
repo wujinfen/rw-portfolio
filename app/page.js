@@ -10,7 +10,6 @@ import MeSection from "../components/MeSection"
 import AboutBox from "../components/AboutBox"
 
 import { TbCoffee } from "react-icons/tb";
-
 import { motion } from 'framer-motion';
 
 

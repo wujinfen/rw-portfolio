@@ -16,7 +16,7 @@ function AboutBox() {
                     </div>
 
                     <div className="text-white font-medium text-sm md:text-base ml-10 mr-8 md:mr-32">
-                        Hi! I&apos;m Roy, a rising software engineer and full-stack developer.
+                        hi! i&apos;m roy
                         <br /><br />
                         Currently, I&apos;m a studying CS and Japanese at the University of Pittsburgh, where I also serve as a student ambassador.
                         <br /><br />
