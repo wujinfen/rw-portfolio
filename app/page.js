@@ -39,7 +39,7 @@ export default function Home() {
         <div className="flex flex-col md:flex-row gap-1 md:gap-6 lg:gap-8 mx-auto">
           {/* Work Title */}
           <div className="text-stone-300 font-medium text-sm md:text-base ml-10 mb-1 md:ml-8">
-            Work
+            projects
           </div>
 
           {/* Work Content */}
@@ -61,7 +61,7 @@ export default function Home() {
       {/*FOOTER*/}
       <section className="flex flex-row mt-8 pb-3 md:mt-8 md:pb-4">
         <div className="w-max mx-auto text-stone-300 text-3xs md:text-xs opacity-40 flex">
-          made by roy wu with React, Tailwind CSS, Framer Motion, and lots of coffee <span className="md:ml-1 align-top"><TbCoffee size="21" color="burlywood" /></span>
+          made by roy wu with react, tailwind, and lots of coffee <span className="md:ml-1 align-top"><TbCoffee size="21" color="burlywood" /></span>
         </div>
       </section>
 

@@ -89,8 +89,8 @@ export default function GetAwayCard() {
 
             <CardContent>
                 <Typography variant="body2" color="white">
-                    Getaway crimes is a notebook that determines Pittsburgh&apos;s target neighborhoods for getaway crimes by analyzing and visualizing police arrest data and
-                    vehicle speedhump data from the Western Pennsylvania Regional Data Center (WPRDC).
+                    Getaway crimes is a notebook that analyzes and visualizes Pittsburgh&apos;s target neighborhoods for hit-and-run crimes. Statistics are developed using police arrest data and
+                    vehicle speedbump data from the Western Pennsylvania Regional Data Center.
                 </Typography>
             </CardContent>
 
@@ -162,10 +162,9 @@ export default function GetAwayCard() {
                         <Typography variant="body2" color="gray">Outcome</Typography>
                         <Typography variant="body2" color="White">
                             Along with regulating traffic and vehicle speeds, speedhumps serve as a deterrent for getaway crimes involving vehicles.
-                            My group coupled speedhump data with police arrest data to gauge criminal activity within each neighborhood.
-                            Additionally, we measured law enforcement presence in each neighborhood by analyzing the amount of arrests, the change in number of arrests over time, and the average distances between incident and arrest locations.
+                            We coupled speedhump data with police arrest data to gauge criminal activity within each neighborhood.
+                            We looked at the amount of arrests, the change in number of arrests over time, and the average distances between incident and arrest locations.
                             Using these metrics, we found Squirrel Hill to be the safest neighborhood in Pittsburgh to avoid getaway crimes.
-                            We also ranked the top 10 safest neighborhoods and the 10 unsafest neighborhoods in Pittsburgh according to these metrics.
                         </Typography>
                     </div>
 
@@ -174,9 +173,8 @@ export default function GetAwayCard() {
                     <div>
                         <Typography variant="body2" color="gray">Development</Typography>
                         <Typography variant="body2" color="White">
-                            The project was completed in Jupyter Notebook and created with Python utilizing the Pandas data analysis framework, NumPy for mathematical operations,
-                            and matplotlib for data visualization.
-                            Additionally, we used the positionstack API to get arrest coordinates, which was used to calculate incident-to-crime distances.
+                            Getaway Crimes was made in Jupyter Notebook using Python with pandas, NumPy, and matplotlib. 
+                            We also used positionstack API to get arrest coordinates, which was used to calculate incident-to-crime distances.
                         </Typography>
                     </div>
 

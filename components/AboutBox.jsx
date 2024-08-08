@@ -12,26 +12,23 @@ function AboutBox() {
             >
                 <div className="flex flex-col md:flex-row gap-1 md:gap-6 lg:gap-8 mx-auto">
                     <div className="text-stone-300 font-medium text-sm md:text-base ml-10 md:ml-8">
-                        About
+                        about
                     </div>
 
                     <div className="text-white font-medium text-sm md:text-base ml-10 mr-8 md:mr-32">
-                        hi! i&apos;m roy
+                        hi! i&apos;m roy, a software engineer. i code for impact.
+                        will also code for food.
                         <br /><br />
-                        Currently, I&apos;m a studying CS and Japanese at the University of Pittsburgh, where I also serve as a student ambassador.
+                        currently, i&apos;m studying cs and japanese at the university of pittsburgh.
                         <br /><br />
-                        I have a passion for learning new technologies and I&apos;m eager to contribute to dynamic teams.
-                        Outside of coding, I enjoy MMA, Shogi, and playing with my cat, Shiina.
+                        outside of coding, i enjoy mma, shogi, and playing with my cat, shiina.
                     </div>
                 </div>
-
-
-
 
                 <section className="mx-auto mt-8 md:mt-8 max-w-screen-md">
                     <div className="flex flex-col md:flex-row gap-1 md:gap-6 lg:gap-8 mx-auto">
                         <div className="text-stone-300 font-medium text-sm md:text-base ml-10 md:ml-8">
-                            On repeat
+                            on repeat
                         </div>
 
                         <div className="text-white text-sm md:text-base ml-8 mr-8 md:mr-124 lg:w-full">
