@@ -89,8 +89,7 @@ export default function GetAwayCard() {
 
             <CardContent>
                 <Typography variant="body2" color="white">
-                    Getaway crimes is a notebook that analyzes and visualizes Pittsburgh&apos;s target neighborhoods for hit-and-run crimes. Statistics are developed using police arrest data and
-                    vehicle speedbump data from the Western Pennsylvania Regional Data Center.
+                    Getaway crimes analyzes and visualizes Pittsburgh&apos;s target neighborhoods for hit-and-run crimes using data from the Western Pennsylvania Regional Data Center.
                 </Typography>
             </CardContent>
 
@@ -141,18 +140,17 @@ export default function GetAwayCard() {
                         </Typography>
                     </div>
 
+                    <div style={{ display: 'flex' }}>
+                        <Typography variant="body2" color="gray" style={{ width: '80px' }}>Role</Typography>
+                        <Typography variant="body2" color="White">
+                            Data Analyst
+                        </Typography>
+                    </div>
 
                     <div style={{ display: 'flex' }}>
                         <Typography variant="body2" color="gray" style={{ width: '80px' }}>Timeline</Typography>
                         <Typography variant="body2" color="White">
                             Nov 2021 - Dec 2021
-                        </Typography>
-                    </div>
-
-                    <div style={{ display: 'flex' }}>
-                        <Typography variant="body2" color="gray" style={{ width: '80px' }}>Role</Typography>
-                        <Typography variant="body2" color="White">
-                            Data Analyst
                         </Typography>
                     </div>
 

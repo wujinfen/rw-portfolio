@@ -125,24 +125,26 @@ export default function MedDayCard() {
           </div>
 
           <div style={{ display: 'flex'}}>
-            <Typography variant="body2" color="gray" style={{ width: '80px' }}>Timeline</Typography>
-            <Typography variant="body2" color="White">
-              September 2023
-            </Typography>
-          </div>
-
-          <div style={{ display: 'flex'}}>
             <Typography variant="body2" color="gray" style={{ width: '80px' }}>Role</Typography>
             <Typography variant="body2" color="White">
               Game Developer
             </Typography>
           </div>
+
           <div style={{ display: 'flex'}}>
             <Typography variant="body2" color="gray" style={{ width: '80px' }}>Awards</Typography>
             <Typography variant="body2" color="White">
               Supporting Caregivers Track Winner
             </Typography>
           </div>
+
+          <div style={{ display: 'flex'}}>
+            <Typography variant="body2" color="gray" style={{ width: '80px' }}>Timeline</Typography>
+            <Typography variant="body2" color="White">
+              September 2023
+            </Typography>
+          </div>
+
 
           <br />
 

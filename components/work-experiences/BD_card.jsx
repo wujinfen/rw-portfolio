@@ -81,8 +81,8 @@ export default function BD_Card() {
 
             <CardContent>
                 <Typography variant="body2" color="white">
-                    I was a programmer for COR, a medical device that performs automated,
-                    high-throughput molecular diagnostics on patient samples from specimen to result.
+                    I was a software R&D engineer for COR, a medical device that performs automated,
+                    high-throughput molecular diagnostics on patient samples.
                 </Typography>
             </CardContent>
 
