@@ -32,7 +32,7 @@ function MeSection({ pfp }) {
 
         {/* Title */}
         <div className="flex justify-center mt-1 text-stone-300 font-medium text-sm md:text-md lg:text-lg lg:mt-2">
-          cs student @ university of pittsburgh
+          new grad cs @ university of pittsburgh
         </div>
       </motion.div>
 
