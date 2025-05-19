@@ -19,7 +19,7 @@ function AboutBox() {
                         hi! i&apos;m roy, a software engineer. i code for impact.
                         will also code for food.
                         <br /><br />
-                        i recently graduated in spring 2025 from the university of pittsburgh with a bachelor&apos;s degree 
+                        i recently graduated, in spring 2025, with honors from the university of pittsburgh with a bachelor&apos;s degree 
                         in cs and a minor in japanese
                         <br /><br />
                         outside of coding, i enjoy mma, shogi, and playing with my cat, shiina.
